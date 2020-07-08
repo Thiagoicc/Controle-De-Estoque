@@ -38,7 +38,7 @@ public class Tipo implements Serializable {
         if (this == o) return true;
         if (!(o instanceof Tipo)) return false;
         Tipo tipo = (Tipo) o;
-        return id.equals(tipo.id);
+        return Objects.equals(id, tipo.id);
     }
 
     @Override
